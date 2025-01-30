@@ -1,7 +1,37 @@
 @font-face {
     font-family: 'segoeui';
-    src: url(../idm222-et556/font/segoe-ui-light.ttf);
+    src: url(font/segoe-ui-light.ttf);
     font-style: normal;
     font-display: swap;
     font-weight: 100 900;
 }  
+
+@font-face {
+    font-family: 'bloodcrow';
+    src: url(font/bloodcrow.ttf);
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100 900;
+} 
+
+html {
+    --red: #FF0009;
+    --black: #000000;
+    --white: #ffffff;
+    --font: 'segoeui', Arial, sans-serif;
+    --font: 'bloodcrow';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1280px;
+    max-height: 800px;
+    position: fixed;
+    background-image: url(media/background11.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
