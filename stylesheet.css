@@ -18,8 +18,8 @@ html {
     --red: #FF0009;
     --black: #000000;
     --white: #ffffff;
-    --font: 'segoeui', Arial, sans-serif;
-    --font: 'bloodcrow';
+    --segoe: 'segoeui', Arial, sans-serif;
+    --bloodcrow: 'bloodcrow';
 }
 
 * {
@@ -29,9 +29,35 @@ html {
 body {
     max-width: 1280px;
     max-height: 800px;
-    position: fixed;
     background-image: url(media/background11.webp);
     background-attachment: fixed;
     background-repeat: no-repeat;
-
+    margin: 0;
+    margin-inline: auto;
 }
+
+#question {
+    font-family: var(--bloodcrow);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    letter-spacing: 3px;
+    font-size: 24px;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #input {
+        img {
+            height: 200px;
+            width: auto;
+        }
+    }
+}
+
