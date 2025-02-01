@@ -52,6 +52,58 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: var(--segoe);
+
+    .container {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        grid-template-rows: repeat(5, 20%);
+        justify-items: center;
+        grid-template-areas:
+        ". tengen tanjiro zenitsu ."
+        "shinobu . . . inosuke"
+        "rengoku . . . giyu"
+        "sanemi . . . gyomei"
+        ". obanai muichiro mitsuri .";
+        width: 800px;
+        height: 800px;
+        gap: 10px;
+        margin: auto;
+        justify-items: center;
+            
+            
+            
+            img {
+                height: 100px;
+                width: auto;
+                border-style: solid;
+                border-radius: 30px;
+            }
+
+        button {
+            display: block;
+            position: relative;
+            background-color: transparent;
+            border: none;
+        }
+
+        .tanjiro { grid-area: tanjiro;}
+
+        .zenitsu { grid-area: zenitsu;}
+        .inosuke { grid-area: inosuke;}
+        .giyu { grid-area: giyu;}
+        .gyomei { grid-area: gyomei;}
+        .mitsuri { grid-area: mitsuri;}
+        .muichiro { grid-area: muichiro;}
+        .obanai { grid-area: obanai; }
+        .sanemi { grid-area: sanemi;}
+        .rengoku { grid-area: rengoku;}
+        .shinobu { grid-area: shinobu;}
+        .tengen { grid-area: tengen; }
+
+
+    }
 
     #input {
         img {
@@ -60,4 +112,6 @@ body {
         }
     }
 }
+
+
 
