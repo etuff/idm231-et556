@@ -170,8 +170,8 @@ body {
 
 @media (max-width <= 350) {
     #question {
-        font-size: 16px;
         letter-spacing: 1.5px;
+        text-wrap: balance;
     }
 
     .container {
