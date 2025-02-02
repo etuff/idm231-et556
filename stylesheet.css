@@ -185,6 +185,13 @@ body {
             border-style: solid;
             border-radius: 8px;
         }
+
+        .logo {
+            img {
+                height: 35px;
+                width: auto;
+            }
+        }
     }
 }
 
