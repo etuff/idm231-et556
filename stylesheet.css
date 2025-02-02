@@ -36,23 +36,21 @@ body {
     margin-inline: auto;
 }
 
+
+/* what hashira are you? */
 #question {
     font-family: var(--bloodcrow);
     color: var(--white);
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 10px;
+    margin-top: 5px;
     letter-spacing: 3px;
     font-size: 24px;
     text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--segoe);
 
     .container {
         position: relative;
@@ -62,15 +60,16 @@ body {
         justify-items: center;
         grid-template-areas:
         ". tengen tanjiro zenitsu ."
-        "shinobu . . . inosuke"
-        "rengoku . . . giyu"
+        "shinobu . logo . inosuke"
+        "rengoku . input . giyu"
         "sanemi . . . gyomei"
         ". obanai muichiro mitsuri .";
-        width: 800px;
-        height: 800px;
+        width: 850px;
+        height: 750px;
         gap: 10px;
         margin: auto;
         justify-items: center;
+        font-family: var(--segoe);
             
             
             
@@ -81,37 +80,93 @@ body {
                 border-radius: 30px;
             }
 
+        /* button */
         button {
             display: block;
             position: relative;
             background-color: transparent;
             border: none;
+            color: var(--white);
+            transition: all 0.5s;
         }
+
+
+        /* button hover */
+        button:hover {
+            transform: scale(1.5);
+        }
+
+        picture img {
+            border: none;
+        }
+
+
+
+
+        /* grid area assign */
 
         .tanjiro { grid-area: tanjiro;}
 
-        .zenitsu { grid-area: zenitsu;}
-        .inosuke { grid-area: inosuke;}
-        .giyu { grid-area: giyu;}
-        .gyomei { grid-area: gyomei;}
-        .mitsuri { grid-area: mitsuri;}
-        .muichiro { grid-area: muichiro;}
-        .obanai { grid-area: obanai; }
-        .sanemi { grid-area: sanemi;}
-        .rengoku { grid-area: rengoku;}
-        .shinobu { grid-area: shinobu;}
-        .tengen { grid-area: tengen; }
-
-
-    }
-
-    #input {
-        img {
-            height: 200px;
-            width: auto;
+        .zenitsu {
+            grid-area: zenitsu;
+            top: 30px;
         }
+
+        .inosuke {
+            grid-area: inosuke;
+            right: 40px;
+        }
+
+        .giyu { grid-area: giyu;}
+
+        .gyomei {
+            grid-area: gyomei;
+            right: 40px;
+        }
+        .mitsuri {
+            grid-area: mitsuri;
+            bottom: 30px;
+        }
+
+        .muichiro { grid-area: muichiro;}
+
+        .obanai {
+            grid-area: obanai;
+            bottom: 30px;
+        }
+
+        .sanemi {
+            grid-area: sanemi;
+            left: 40px;
+        }
+        .rengoku { grid-area: rengoku;}
+
+        .shinobu {
+            grid-area: shinobu;
+            left: 40px;
+        }
+
+        .tengen {
+            grid-area: tengen; 
+            top: 30px;
+        }
+
+        .logo {
+            grid-area: logo;
+
+            img {
+                height: 200px;
+                width: auto;
+            }
+        }
+
+        #input { grid-area: input;}
+
+
     }
-}
+
+  
+
 
 
 
