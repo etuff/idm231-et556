@@ -168,22 +168,22 @@ body {
   
 
 
-@media (max-width <= 480) {
+@media (max-width <= 350) {
     #question {
         font-size: 16px;
         letter-spacing: 1.5px;
     }
 
     .container {
-        width: 425px;
-        height: 375px;
+        width: 213.5px;
+        height: 200px;
         gap: 5px;
 
         img {
-            height: 50px;
+            height: 25px;
             width: auto;
             border-style: solid;
-            border-radius: 15px;
+            border-radius: 8px;
         }
     }
 }
