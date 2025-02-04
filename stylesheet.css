@@ -111,51 +111,51 @@ body {
 
         /* grid area assign */
 
-        .tanjiro { grid-area: tanjiro;}
+        #tanjiro { grid-area: tanjiro;}
 
-        .zenitsu {
+        #zenitsu {
             grid-area: zenitsu;
             top: 30px;
         }
 
-        .inosuke {
+        #inosuke {
             grid-area: inosuke;
             right: 40px;
         }
 
-        .giyu { grid-area: giyu;}
+        #giyu { grid-area: giyu;}
 
-        .gyomei {
+        #gyomei {
             grid-area: gyomei;
             right: 40px;
         }
-        .mitsuri {
+        #mitsuri {
             grid-area: mitsuri;
             bottom: 30px;
         }
 
-        .muichiro {
+        #muichiro {
             grid-area: muichiro;
             top: 10px;
         }
 
-        .obanai {
+        #obanai {
             grid-area: obanai;
             bottom: 30px;
         }
 
-        .sanemi {
+        #sanemi {
             grid-area: sanemi;
             left: 40px;
         }
-        .rengoku { grid-area: rengoku;}
+        #rengoku { grid-area: rengoku;}
 
-        .shinobu {
+        #shinobu {
             grid-area: shinobu;
             left: 40px;
         }
 
-        .tengen {
+        #tengen {
             grid-area: tengen; 
             top: 30px;
         }
@@ -196,11 +196,25 @@ body {
   
 
 
-@media (max-width <= 480) {
+@media (max-width <= 320) {
+
+    body {
+        margin-inline: auto;
+        max-width: 320px;
+        max-height: auto;
+    }
+
+
     #question {
         font-size: 12px;
         letter-spacing: 1.5px;
         text-wrap: balance;
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            font-size: 12px;
+        }
     }
 
     .container {
