@@ -18,6 +18,7 @@ html {
     --red: #FF0009;
     --black: #000000;
     --white: #ffffff;
+    --sky: #E8F8FF;
     --segoe: 'segoeui', Arial, sans-serif;
     --bloodcrow: 'bloodcrow';
 }
@@ -65,15 +66,16 @@ body {
         justify-items: center;
         grid-template-areas:
         ". tengen tanjiro zenitsu ."
-        "shinobu . input . inosuke"
+        "shinobu . . . inosuke"
         "rengoku . input . giyu"
-        "sanemi . input . gyomei"
+        "sanemi . . . gyomei"
         ". obanai muichiro mitsuri .";
         width: 850px;
         height: 750px;
         gap: 10px;
         margin: auto;
         justify-items: center;
+        place-items: center;
         font-family: var(--segoe);
             
             
@@ -162,23 +164,57 @@ body {
 
 
 
-        #input {
+        #centerinput {
             grid-area: input;
             background-color: var(--white);
             border-radius: 30px;
+            padding: 20px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
+            /* gap: 60px; */
 
             #logo {
-                
                 img {
                     height: 200px;
                     width: auto;
                 }
             }
-            
+
+            input[type="date"], input[type="text"] {
+                width: 100%;
+                height: 30px;
+                border-radius: 8px;
+                padding: 20px;
+                border: none;
+                background-color: var(--sky);
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, 
+                rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                font-size: 18px;
+                font-family: var(--bloodcrow);
+            }
+
+            #info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+
+            input[type="submit"] {
+                width: 100px;
+                border-radius: 8px;
+                border: none;
+                padding: 10px;
+                background-color: var(--red);
+                color: var(--white);
+                font-family: var(--bloodcrow);
+                font-size: 22px;
+                letter-spacing: 2px;
+            }
+
         }
 
 
@@ -200,7 +236,7 @@ body {
   
 
 
-@media (max-width <= 320) {
+/* @media (max-width <= 320) {
 
     body {
         margin-inline: auto;
@@ -240,5 +276,5 @@ body {
             }
         }
     }
-}
+} */
 
