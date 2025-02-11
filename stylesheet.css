@@ -221,6 +221,31 @@ body {
     }
 
 
+    /* help */
+    h1 a {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        color: var(--white);
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 15px;
+        padding: 10px 15px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin: 0;
+        font-family: var(--bloodcrow);
+        font-size: 50px;
+
+
+        img {
+            height: 50px;
+            width: auto;
+        }
+    }
+
+
     footer {
         color: var(--white);
         text-align: center;
