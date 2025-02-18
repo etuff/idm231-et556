@@ -6,6 +6,8 @@
     <title>Hashira Zodiac</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" href="media/logo.png" type="image/png">
+
+    <script src="pre.js"></script>
 </head>
 <body>
 
@@ -15,63 +17,63 @@
     
     
     <div class="container">
-        <button id="tanjiro">
-            <img src="media/tanjiro/tanjiro-thum.webp" alt="tanjiro" />
+        <button class="hbutton" id="tanjiro">
+            <img class="thumb" src="media/tanjiro/tanjiro-thum.webp" alt="tanjiro" />
             <p> Tanjiro </p>
         </button>
 
-        <button id="zenitsu">
-            <img src="media/zenitsu/zenitsu_thum.webp" alt="zenitsu" />
+        <button class="hbutton" id="zenitsu">
+            <img class="thumb" src="media/zenitsu/zenitsu_thum.webp" alt="zenitsu" />
             <p> Zenitsu </p>
         </button>
 
-        <button id="inosuke">
-            <img src="media/Inosuke/inosuke_thum.webp" alt="inosuke" />
+        <button class="hbutton" id="inosuke">
+            <img class="thumb" src="media/Inosuke/inosuke_thum.webp" alt="inosuke" />
             <p> Inosuke </p>
         </button>
 
-        <button id="giyu">
-            <img src="media/giyu/giyu_thum.webp" alt="giyu" />
+        <button class="hbutton" id="giyu">
+            <img class="thumb" src="media/giyu/giyu_thum.webp" alt="giyu" />
             <p> Giyu </p>
         </button>
 
-        <button id="gyomei">
-            <img src="media/gyomei/gyomei_thum.webp" alt="gyomei" />
+        <button class="hbutton" id="gyomei">
+            <img class="thumb" src="media/gyomei/gyomei_thum.webp" alt="gyomei" />
             <p> Gyomei </p>
         </button>
 
-        <button id="mitsuri">
-            <img src="media/mitsuri/mitsuri_thum.webp" alt="mitsuri" />
+        <button class="hbutton" id="mitsuri">
+            <img class="thumb" src="media/mitsuri/mitsuri_thum.webp" alt="mitsuri" />
             <p> Mitsuri </p>
         </button>
 
-        <button id="muichiro">
-            <img src="media/Muichiro/Muichiro_thum.webp" alt="muichiro" />
+        <button class="hbutton" id="muichiro">
+            <img class="thumb" src="media/Muichiro/Muichiro_thum.webp" alt="muichiro" />
             <p> Muichiro </p>
         </button>
 
-        <button id="obanai">
-            <img src="media/obanai/obanai_thum.webp" alt="obanai" />
+        <button class="hbutton" id="obanai">
+            <img class="thumb" src="media/obanai/obanai_thum.webp" alt="obanai" />
             <p> Obanai </p>
         </button>
 
-        <button id="sanemi">
-            <img src="media/sanemi/sanemi_thum.webp" alt="sanemi" />
+        <button class="hbutton" id="sanemi">
+            <img class="thumb" src="media/sanemi/sanemi_thum.webp" alt="sanemi" />
             <p> Sanemi </p>
         </button>
 
-        <button id="rengoku">
-            <img src="media/rengoku/rengoku_thum.webp" alt="rengoku" />
+        <button class="hbutton" id="rengoku">
+            <img class="thumb" src="media/rengoku/rengoku_thum.webp" alt="rengoku" />
             <p> Rengoku </p>
         </button>
 
-        <button id="shinobu">
-            <img src="media/Shinobu/shinobu_thum.webp" alt="shinobu" />
+        <button class="hbutton" id="shinobu">
+            <img class="thumb" src="media/Shinobu/shinobu_thum.webp" alt="shinobu" />
             <p> Shinobu </p>
         </button>
 
-        <button id="tengen">
-            <img src="media/tengen/tengen_thum.webp" alt="tengen" />
+        <button class="hbutton" id="tengen">
+            <img class="thumb" src="media/tengen/tengen_thum.webp" alt="tengen" />
             <p> Tengen </p>
         </button>
 
@@ -90,17 +92,34 @@
             
         </div>
 
+
+        <div class="display">
+            <div class="hashirafront">
+                <h3>Hello , You are the </h3>
+                <img class="thumb" id="hashiraimage" src="media/tanjiro/tanjiro-thum.webp" alt="tanjiro" />
+                <p id="hashiraname" hidden>tanjiro</p>
+                <h1 id="hashiratitle"> Sun Hashira </h2>
+                <h3 id="daterange">Feb 19 - March 20</h4>
+                <p id="description"> You have deep empathy, compassion, and selflessness. 
+                    You are driven to help others and often puts their needs before your own</p>
+            </div>
+
+            <div id="displaybuttons">
+                <button id="clickflip">Click to Flip</button>
+                <button class="close"> Close</button>
+            </div>
+
+        </div>
+
     </div>
 
-    <div id="help"> 
-
-        <h1> <a> ? </a> </h1>
-    </div>
+    <button id="help">?</button>
 
 <!-- <footer>
     <p> Designed by Enoch Tuffour </p>
     <p>&copy; 2025.</p>
 </footer> -->
     
+<script src="post.js"></script>
 </body>
 </html>
