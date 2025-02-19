@@ -86,6 +86,9 @@ function displayinfo(whichone) {
             hdate.innerHTML = 'February 19 - March 20';
             des.innerHTML = 'You have deep empathy, compassion, and selflessness. You are driven to help others and often puts their needs before your own';
             displayarea.classList.remove('hideme');
+
+            // play audio for this character
+            playaudio('tanjirovoice');
             break;
 
         case 'zenitsu':
@@ -94,6 +97,9 @@ function displayinfo(whichone) {
             hdate.innerHTML = 'June 22 - July 22';
             des.innerHTML = 'You are emotionally sensitivity, loyal, and protective. Despite your fears, you deeply care for your friends and shows bravery when it matters most';
             displayarea.classList.remove('hideme');
+
+            // play audio for this character
+            playaudio('zenitsuvoice');
             break;
 
         case 'inosuke':
@@ -102,6 +108,9 @@ function displayinfo(whichone) {
             hdate.innerHTML = 'March 21 - April 19';
             des.innerHTML = 'You are bold, competitive, and impulsive. You are always eager for a challenge and dives headfirst into battles';
             displayarea.classList.remove('hideme');
+
+            // play audio for this character
+            playaudio('inosukevoice');
             break;
 
         case 'giyu':
@@ -110,6 +119,9 @@ function displayinfo(whichone) {
             hdate.innerHTML = 'October 23 - November 21';
             des.innerHTML = 'You have a reserved demeanor, intense, and strong sense of duty. You are deeply committed to your role and possesses a mysterious aura';
             displayarea.classList.remove('hideme');
+
+            // play audio for this character
+            playaudio('giyuvoice');
             break;
 
         case 'gyomei':
@@ -118,6 +130,9 @@ function displayinfo(whichone) {
             hdate.innerHTML = 'April 20 - May 20';
             des.innerHTML = 'You are steadfast, reliable, and gentle. Despite your imposing appearance, you are compassionate and patient';
             displayarea.classList.remove('hideme');
+
+            // play audio for this character
+            playaudio('gyomeivoice');
             break;
 
         case 'mitsuri':
@@ -126,6 +141,9 @@ function displayinfo(whichone) {
             hdate.innerHTML = 'September 23 - October 22';
             des.innerHTML = 'You are affectionate, social, and harmonious. You value relationships and strives for balance in your interactions';
             displayarea.classList.remove('hideme');
+
+            // play audio for this character
+            playaudio('mitsurivoice');
             break;
 
         case 'muichiro':
@@ -134,6 +152,9 @@ function displayinfo(whichone) {
             hdate.innerHTML = 'January 20 - February 18';
             des.innerHTML = 'you appear detached, introspective, and innovative. You often appear lost in thought but possesses unique insights';
             displayarea.classList.remove('hideme');
+
+            // play audio for this character
+            playaudio('muichirovoice');
             break;
 
         case 'obanai':
@@ -142,6 +163,9 @@ function displayinfo(whichone) {
             hdate.innerHTML = 'August 23 - September 22';
             des.innerHTML = 'You are meticulous, critical, and have a dedication to duty. You hold high standards and is attentive to details';
             displayarea.classList.remove('hideme');
+
+            // play audio for this character
+            playaudio('obanaivoice');
             break;
 
         case 'sanemi':
@@ -150,6 +174,9 @@ function displayinfo(whichone) {
             hdate.innerHTML = 'July 23 - August 22';
             des.innerHTML = 'You are fierce, courageous, and authoritative. You are confident in your abilities and commands attention';
             displayarea.classList.remove('hideme');
+
+            // play audio for this character
+            playaudio('sanemivoice');
             break;
 
         case 'rengoku':
@@ -158,6 +185,9 @@ function displayinfo(whichone) {
             hdate.innerHTML = 'November 22 - December 21';
             des.innerHTML = 'You are enthusiastic, optimistic, and adventurous. You approach life with a positive outlook and seeks to inspire others';
             displayarea.classList.remove('hideme');
+
+            // play audio for this character
+            playaudio('rengokuvoice');
             break;
 
         case 'shinobu':
@@ -166,6 +196,9 @@ function displayinfo(whichone) {
             hdate.innerHTML = 'May 21 - June 21';
             des.innerHTML = 'You are adaptable, witty, and have a dual nature. You present a cheerful exterior while harboring deeper, more complex emotions';
             displayarea.classList.remove('hideme');
+
+            // play audio for this character
+            playaudio('shinobuvoice');
             break;
 
         case 'tengen':
@@ -174,6 +207,9 @@ function displayinfo(whichone) {
             hdate.innerHTML = 'December 22 - Jane 19';
             des.innerHTML = 'You are discipline, ambitious, and flamboyant. You are committed to your duties and strives for excellence in a flashy manner';
             displayarea.classList.remove('hideme');
+
+            // play audio for this character
+            playaudio('tengenvoice');
             break;
 
         default:
@@ -184,3 +220,14 @@ function displayinfo(whichone) {
 closebtn.addEventListener('click', function() {
     displayarea.classList.add('hideme');
 }, false);
+
+// play audio function
+const allaudios = document.querySelectorAll('audio');
+function playaudio(whichsound) {
+    allaudios.forEach(thisaudio => {
+        thisaudio.pause();
+        // rest sound file back to start
+        thisaudio.currentTime = 0; 
+    });
+    document.getElementById(whichsound).play();
+}
