@@ -81,96 +81,96 @@ function displayinfo(whichone) {
 
     switch (whichone) {
         case 'tanjiro':
-            himage.src = 'media/tanjiro/tanjiro-thum.webp';
-            htitle.innerHTML = 'Sun Hashira';
+            himage.src = 'media/tanjiro/tanjiro22.webp';
+            htitle.innerHTML = 'Sun Hashira - Tanjiro';
             hdate.innerHTML = 'February 19 - March 20';
             des.innerHTML = 'You have deep empathy, compassion, and selflessness. You are driven to help others and often puts their needs before your own';
             displayarea.classList.remove('hideme');
             break;
 
         case 'zenitsu':
-            himage.src = 'media/zenitsu/zenitsu_thum.webp';
-            htitle.innerHTML = 'Thunder Hashira';
+            himage.src = 'media/zenitsu/zenitsu22.webp';
+            htitle.innerHTML = 'Thunder Hashira - Zenitsu';
             hdate.innerHTML = 'June 22 - July 22';
             des.innerHTML = 'You are emotionally sensitivity, loyal, and protective. Despite your fears, you deeply care for your friends and shows bravery when it matters most';
             displayarea.classList.remove('hideme');
             break;
 
         case 'inosuke':
-            himage.src = 'media/Inosuke/inosuke_thum.webp';
-            htitle.innerHTML = 'Beast Hashira';
+            himage.src = 'media/Inosuke/inosuke22.webp';
+            htitle.innerHTML = 'Beast Hashira - Inosuke';
             hdate.innerHTML = 'March 21 - April 19';
             des.innerHTML = 'You are bold, competitive, and impulsive. You are always eager for a challenge and dives headfirst into battles';
             displayarea.classList.remove('hideme');
             break;
 
         case 'giyu':
-            himage.src = 'media/giyu/giyu_thum.webp';
-            htitle.innerHTML = 'Water Hashira';
+            himage.src = 'media/giyu/giyu22.webp';
+            htitle.innerHTML = 'Water Hashira - Giyu';
             hdate.innerHTML = 'October 23 - November 21';
             des.innerHTML = 'You have a reserved demeanor, intense, and strong sense of duty. You are deeply committed to your role and possesses a mysterious aura';
             displayarea.classList.remove('hideme');
             break;
 
         case 'gyomei':
-            himage.src = 'media/gyomei/gyomei_thum.webp';
-            htitle.innerHTML = 'Stone Hashira';
+            himage.src = 'media/gyomei/gyomei22.webp';
+            htitle.innerHTML = 'Stone Hashira - Gyomei';
             hdate.innerHTML = 'April 20 - May 20';
             des.innerHTML = 'You are steadfast, reliable, and gentle. Despite your imposing appearance, you are compassionate and patient';
             displayarea.classList.remove('hideme');
             break;
 
         case 'mitsuri':
-            himage.src = 'media/mitsuri/mitsuri_thum.webp';
-            htitle.innerHTML = 'Love Hashira';
+            himage.src = 'media/mitsuri/mitsuri22.webp';
+            htitle.innerHTML = 'Love Hashira - Mitsuri';
             hdate.innerHTML = 'September 23 - October 22';
             des.innerHTML = 'You are affectionate, social, and harmonious. You value relationships and strives for balance in your interactions';
             displayarea.classList.remove('hideme');
             break;
 
         case 'muichiro':
-            himage.src = 'mmedia/Muichiro/Muichiro_thum.webp';
-            htitle.innerHTML = 'Mist Hashira';
+            himage.src = 'mmedia/Muichiro/muichiro22.webp';
+            htitle.innerHTML = 'Mist Hashira - Muichiro';
             hdate.innerHTML = 'January 20 - February 18';
             des.innerHTML = 'you appear detached, introspective, and innovative. You often appear lost in thought but possesses unique insights';
             displayarea.classList.remove('hideme');
             break;
 
         case 'obanai':
-            himage.src = 'media/obanai/obanai_thum.webp';
-            htitle.innerHTML = 'Serpent Hashira';
+            himage.src = 'media/obanai/obanai.webp';
+            htitle.innerHTML = 'Serpent Hashira - Obanai';
             hdate.innerHTML = 'August 23 - September 22';
             des.innerHTML = 'You are meticulous, critical, and have a dedication to duty. You hold high standards and is attentive to details';
             displayarea.classList.remove('hideme');
             break;
 
         case 'sanemi':
-            himage.src = 'media/sanemi/sanemi_thum.webp';
-            htitle.innerHTML = 'Wind Hashira';
+            himage.src = 'media/sanemi/sanemi22.webp';
+            htitle.innerHTML = 'Wind Hashira - Sanemi';
             hdate.innerHTML = 'July 23 - August 22';
             des.innerHTML = 'You are fierce, courageous, and authoritative. You are confident in your abilities and commands attention';
             displayarea.classList.remove('hideme');
             break;
 
         case 'rengoku':
-            himage.src = 'media/rengoku/rengoku_thum.webp';
-            htitle.innerHTML = 'Flame Hashira';
+            himage.src = 'media/rengoku/rengoku22.webp';
+            htitle.innerHTML = 'Flame Hashira - Rengoku';
             hdate.innerHTML = 'November 22 - December 21';
             des.innerHTML = 'You are enthusiastic, optimistic, and adventurous. You approach life with a positive outlook and seeks to inspire others';
             displayarea.classList.remove('hideme');
             break;
 
         case 'shinobu':
-            himage.src = 'media/Shinobu/shinobu_thum.webp';
-            htitle.innerHTML = 'Insect Hashira';
+            himage.src = 'media/Shinobu/shinobu22.webp';
+            htitle.innerHTML = 'Insect Hashira - Shinobu';
             hdate.innerHTML = 'May 21 - June 21';
             des.innerHTML = 'You are adaptable, witty, and have a dual nature. You present a cheerful exterior while harboring deeper, more complex emotions';
             displayarea.classList.remove('hideme');
             break;
 
         case 'tengen':
-            himage.src = 'media/tengen/tengen_thum.webp';
-            htitle.innerHTML = 'Sound Hashira';
+            himage.src = 'media/tengen/tengen22.webp';
+            htitle.innerHTML = 'Sound Hashira - Tengen';
             hdate.innerHTML = 'December 22 - Jane 19';
             des.innerHTML = 'You are discipline, ambitious, and flamboyant. You are committed to your duties and strives for excellence in a flashy manner';
             displayarea.classList.remove('hideme');

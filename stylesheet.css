@@ -186,7 +186,7 @@ body {
                 }
             }
 
-            input[type="date"], input[type="text"] {
+            input[type="date"] {
                 width: 100%;
                 height: 25px;
                 border-radius: 8px;
@@ -267,7 +267,7 @@ body {
         margin: 25px;
     }
 
-    /* display */
+    /* display area */
     section {
         z-index: 1;
         background-color: rgba(255, 255, 255, 0.8);
@@ -286,82 +286,63 @@ body {
         flex-direction: column;
         justify-content: center;
         
+        
+            .hashira {
+                width: 800px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: var(--white);
+                border-radius: 20px;
+                padding: 30px 20px;
+                margin: 30px 0;
+                text-align: center;
 
-        .hashirafront {
-            width: 800px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: var(--white);
-            border-radius: 20px;
-            padding: 30px 20px;
-            margin: 50px 0;
-            text-align: center;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, 
+                rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, 
-            rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                #hashiraimage {
+                    border-radius: 10px;
+                    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+                }
 
-            h3 {
-                font-family: var(--bold);
+                h3 {
+                    font-family: var(--bold);
+                }
+
+                p {
+                    font-family: var(--bold);
+                }
+
+                h2 {
+                    font-family: var(--bloodcrow);
+                    letter-spacing: 2px;
+                    font-size: 35px;
+                    background-color: var(--sky);
+                    padding: 15px;
+                    border-radius: 10px;
+                    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+                    margin: 10px;
+                } 
+
             }
 
-            p {
-                font-family: var(--bold);
-            }
-
-            h1 {
-                font-family: var(--bloodcrow);
-                letter-spacing: 2px;
-                font-size: 45px;
-                background-color: var(--sky);
-                padding: 20px;
-                border-radius: 10px;
-                box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-            } 
-
-            #hashiraname {
-                margin: 0;
-                font-size: 12px;
-            }
-        }
-
-        #displaybuttons {
-            align-self: center;
-            
-
-            #clickflip {
+              
+            #close {
                 width: 200px;
                 border-radius: 10px;
-                padding: 20px;
                 background-color: var(--red);
                 color: var(--white);
                 font-family: var(--bloodcrow);
                 font-size: 22px;
                 letter-spacing: 2px;
                 margin: 25px;
-            }
-
-            
-            #close {
-                width: 200px;
-                border-style: solid;
-                border-color: var(--black);
-                border-width: 3px;
-                border-radius: 10px;
-                background-color: var(--sky);
-                color: var(--black);
-                font-family: var(--bloodcrow);
-                font-size: 22px;
-                letter-spacing: 2px;
-                margin: 25px;
                 padding: 20px;
+                align-self: center;
                 
             }
 
-        }
-       
-
-    }  
+        }  
 
     .hideme{
         display: none;
