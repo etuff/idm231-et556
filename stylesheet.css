@@ -256,19 +256,19 @@ body {
         position: absolute;
         top: 30px;
         right: 30px;
-        width: 80px;
+        padding: 10px 30px;
         border-style: solid;
         border-width: 3px;
         border-radius: 10px;
         color: var(--white);
         font-family: var(--bloodcrow);
-        font-size: 22px;
+        font-size: 30px;
         letter-spacing: 2px;
         margin: 25px;
     }
 
     /* display */
-    .display {
+    section {
         z-index: 1;
         background-color: rgba(255, 255, 255, 0.8);
         border-radius: 30px;
@@ -317,12 +317,12 @@ body {
                 padding: 20px;
                 border-radius: 10px;
                 box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-            }
+            } 
 
-            /* #hashiraname {
+            #hashiraname {
                 margin: 0;
                 font-size: 12px;
-            } */
+            }
         }
 
         #displaybuttons {
@@ -341,8 +341,8 @@ body {
                 margin: 25px;
             }
 
-            /* close button */
-            .close {
+            
+            #close {
                 width: 200px;
                 border-style: solid;
                 border-color: var(--black);
@@ -361,7 +361,11 @@ body {
         }
        
 
-    }
+    }  
+
+    .hideme{
+        display: none;
+      }
 
 
 
