@@ -235,7 +235,7 @@ function playaudio(whichsound) {
         thisaudio.pause();
         // reset sound file back to start
         thisaudio.currentTime = 0; 
-
+    
     });
     document.getElementById(whichsound).play();
 }

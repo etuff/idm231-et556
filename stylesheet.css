@@ -37,7 +37,7 @@ html {
 
 body {
     max-width: 1280px;
-    max-height: auto;
+    max-height: 800px;
     background-image: url(media/background22.webp);
     background-size: cover;
     background-attachment: fixed;
