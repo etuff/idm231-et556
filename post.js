@@ -147,7 +147,7 @@ function displayinfo(whichone) {
             break;
 
         case 'muichiro':
-            himage.src = 'media/Muichiro/muichiro22.webp';
+            himage.src = 'media/Muichiro/muichiro33.webp';
             htitle.innerHTML = 'Mist Hashira - Muichiro';
             hdate.innerHTML = 'January 20 - February 18';
             des.innerHTML = 'you appear detached, introspective, and innovative. You often appear lost in thought but possesses unique insights';
