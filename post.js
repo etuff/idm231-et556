@@ -219,15 +219,23 @@ function displayinfo(whichone) {
 
 closebtn.addEventListener('click', function() {
     displayarea.classList.add('hideme');
-}, false);
+
+    allaudios.forEach(thisaudio => {
+        // stops audio
+        thisaudio.pause();
+        // reset sound file back to start
+        thisaudio.currentTime = 0;
+    });
+});
 
 // play audio function
 const allaudios = document.querySelectorAll('audio');
 function playaudio(whichsound) {
     allaudios.forEach(thisaudio => {
         thisaudio.pause();
-        // rest sound file back to start
+        // reset sound file back to start
         thisaudio.currentTime = 0; 
+
     });
     document.getElementById(whichsound).play();
 }

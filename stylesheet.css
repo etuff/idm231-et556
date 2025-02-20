@@ -38,7 +38,8 @@ html {
 body {
     max-width: 1280px;
     max-height: auto;
-    background-image: url(media/background11.webp);
+    background-image: url(media/background22.webp);
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     margin: 0;
@@ -262,7 +263,7 @@ button:active {
     font-size: 30px;
     letter-spacing: 2px;
     margin: 25px;
-}
+} 
 
 /* display area */
 section {
