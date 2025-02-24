@@ -73,11 +73,11 @@ body {
       grid-template-rows: repeat(5, 20%);
       justify-items: center;
      grid-template-areas:
-     ". tengen tanjiro zenitsu ."
-     "shinobu . . . inosuke"
-     "rengoku . input . giyu"
-      "sanemi . . . gyomei"
-      ". obanai muichiro mitsuri .";
+     ". tengen muichiro tanjiro ."
+     "rengoku . . . inosuke"
+     "giyu . input . gyomei"
+      "mitsuri . . . shinobu"
+      ". obanai sanemi zenitsu .";
       width: 850px;
       height: 750px;
       gap: 10px;
@@ -115,10 +115,10 @@ body {
 
     /* grid area assign */
 
-    #tanjiro { grid-area: tanjiro;}
+    #muichiro { grid-area: muichiro;}
 
-    #zenitsu {
-        grid-area: zenitsu;
+    #tanjiro {
+        grid-area: tanjiro;
         top: 30px;
     }
 
@@ -127,19 +127,19 @@ body {
         right: 40px;
     }
 
-    #giyu { grid-area: giyu;}
+    #gyomei { grid-area: gyomei;}
 
-    #gyomei {
-        grid-area: gyomei;
+    #shinobu {
+        grid-area: shinobu;
         right: 40px;
     }
-    #mitsuri {
-         grid-area: mitsuri;
+    #zenitsu{
+         grid-area: zenitsu;
         bottom: 20px;
     }
 
-    #muichiro {
-         grid-area: muichiro;
+    #sanemi {
+         grid-area: sanemi;
          top: 20px;
     }
 
@@ -148,14 +148,14 @@ body {
          bottom: 20px;
     }
 
-    #sanemi {
-         grid-area: sanemi;
+    #mitsuri {
+         grid-area: mitsuri;
          left: 40px;
      }
-    #rengoku { grid-area: rengoku;}
+    #giyu { grid-area: giyu;}
 
-    #shinobu {
-         grid-area: shinobu;
+    #rengoku {
+         grid-area: rengoku;
          left: 40px;
      }
 
