@@ -37,7 +37,7 @@ html {
 
 body {
     max-width: 1280px;
-    max-height: 800px;
+    max-height: 100vh;
     background-image: url(media/background22.webp);
     background-size: cover;
     background-attachment: fixed;
@@ -250,27 +250,91 @@ button:active {
 
 
 /* help */
-#help {
+#howto {
     position: absolute;
     top: 30px;
     right: 30px;
-    padding: 10px 30px;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 10px;
-    color: var(--white);
-    font-family: var(--bloodcrow);
-    font-size: 30px;
-    letter-spacing: 2px;
-    margin: 25px;
-} 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+
+    #help {
+        padding: 10px 30px;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 10px;
+        color: var(--white);
+        font-family: var(--bloodcrow);
+        font-size: 30px;
+        letter-spacing: 2px;
+        margin: 25px;
+    } 
+
+    #helpinfo {
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 30px;
+        padding: 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        justify-items: center;
+        
+
+        #clse {
+            width: 100px;
+            border-radius: 10px;
+            background-color: var(--red);
+            color: var(--white);
+            font-family: var(--bloodcrow);
+            font-size: 16px;
+            letter-spacing: 2px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+    }
+}
+
+.helphideme {
+    display: none;
+}
+
+
+
+#instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 20px;
+    font-family: var(--segoe);
+    padding: 15px;
+
+    #ubu {
+        width: 150px;
+        height: auto;
+    }
+
+    h2 {
+        font-family: var(--bloodcrow);
+        letter-spacing: 2px;
+        margin: 0;
+    }
+
+    h3, p {
+        margin: 5px;
+    }
+}
+
+
 
 /* display area */
 section {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 30px;
     height: 800px;
-     padding: 50px;
+    padding: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -351,8 +415,5 @@ footer {
     margin-top: 60px;
     padding: 5px;
 
-    p {
-        margin: 0;
-    }
 }
 

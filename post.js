@@ -193,7 +193,7 @@ function displayinfo(whichone) {
         case 'shinobu':
             himage.src = 'media/Shinobu/shinobu22.webp';
             htitle.innerHTML = 'Insect Hashira - Shinobu';
-            hdate.innerHTML = 'May 21 - June 21';
+            hdate.innerHTML = 'May 21 - Junuary 21';
             des.innerHTML = 'You are adaptable, witty, and have a dual nature. You present a cheerful exterior while harboring deeper, more complex emotions';
             displayarea.classList.remove('hideme');
 
@@ -239,3 +239,12 @@ function playaudio(whichsound) {
     });
     document.getElementById(whichsound).play();
 }
+
+
+// help/ how to play
+const helpbtn = document.getElementById('help');
+const displayhelp = document.getElementById('helpinfo');
+helpbtn.addEventListener('click', function() {
+    displayhelp.classList.remove('hideme');
+    playaudio('helpvoice');
+});
