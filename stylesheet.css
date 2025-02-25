@@ -296,9 +296,6 @@ button:active {
     }
 }
 
-.helphideme {
-    display: none;
-}
 
 
 
@@ -322,7 +319,7 @@ button:active {
         margin: 0;
     }
 
-    h3, p {
+    h4, p {
         margin: 5px;
     }
 }

@@ -248,3 +248,16 @@ helpbtn.addEventListener('click', function() {
     displayhelp.classList.remove('hideme');
     playaudio('helpvoice');
 });
+
+// close
+const helpclose = document.getElementById('clse');
+helpclose.addEventListener('click', function() {
+    displayhelp.classList.add('hideme');
+    
+    allaudios.forEach(thisaudio => {
+        thisaudio.pause();
+        // reset sound file back to start
+        thisaudio.currentTime = 0; 
+    
+    });
+});
