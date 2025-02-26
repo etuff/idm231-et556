@@ -439,10 +439,16 @@ footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(5, auto);
-        width: 100vw;
+        width: 300px;
         height: auto;
         gap: 5px;
         padding: 10px;
+
+        .thumb {
+            height: 50px;
+            width: auto;
+
+        }
     }
 
     #centerinput {
