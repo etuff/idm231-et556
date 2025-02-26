@@ -414,7 +414,7 @@ footer {
 
 
 /* media queries */
-@media screen and (max-width: 420px) {
+@media screen and (max-width <= 420px) {
     body {
         max-width: 100vw;
         max-height: 100vh;
@@ -451,17 +451,23 @@ footer {
     }
 
     section {
-        width: 95vw;
+        width: 100vw;
         height: 90vh;
-        padding: 20px;
+        padding: 10px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
+    
     .hashira {
-        width: 90%;
-        padding: 20px;
+        width: 90vw; 
+        max-width: 95vw; 
+        padding: 15px;
     }
 
     #close {
