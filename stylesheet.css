@@ -435,6 +435,7 @@ footer {
     }
 
     .container {
+        justify-self: center;
         margin-top: 50px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
