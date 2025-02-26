@@ -204,7 +204,7 @@ function displayinfo(whichone) {
         case 'tengen':
             himage.src = 'media/tengen/tengen22.webp';
             htitle.innerHTML = 'Sound Hashira - Tengen';
-            hdate.innerHTML = 'December 22 - Jane 19';
+            hdate.innerHTML = 'December 22 - January 19';
             des.innerHTML = 'You are discipline, ambitious, and flamboyant. You are committed to your duties and strives for excellence in a flashy manner';
             displayarea.classList.remove('hideme');
 
@@ -260,4 +260,66 @@ helpclose.addEventListener('click', function() {
         thisaudio.currentTime = 0; 
     
     });
+});
+
+
+// input date and submit code below
+// 
+const submitbtn = document.getElementById('datesubmit');
+submitbtn.addEventListener('click', function() {
+    console.log('submit button clicked');
+    // step 1: capture user input date
+    const birthdate = document.getElementById('birthdate').valueAsDate;
+    console.log('Your birthday is: ' + birthdate);
+
+    // make sure date is valid
+    if (birthdate) {
+        const tzoffset = birthdate.getTimezoneOffset() * 60 * 1000;
+        const birthdateest = new Date(birthdate.getTime() + tzoffset);
+        console.log('birthdate EST is: ' + birthdateest);
+
+        // extract month
+        const month = birthdateest.getMonth() + 1;
+
+        // extract day of the month
+        const day = birthdateest.getDate();
+        console.log('month is ' + month + ' day is: ' + day);
+        
+
+        // convert date to a hashira
+        if ((month === 12 && day >= 22) || (month === 1 && day <= 19)) {
+            hashira = 'tengen'
+          } else if ((month === 11 && day >= 22) || (month === 12 && day <= 21)) {
+            hashira = 'rengoku'
+          } else if ((month === 10 && day >= 24) || (month === 11 && day <= 21)) {
+            hashira = 'giyu'
+          } else if ((month === 9 && day >= 23) || (month === 10 && day <= 23)) {
+            hashira = 'mitsuri'
+          } else if ((month === 8 && day >= 23) || (month === 9 && day <= 22)) {
+            hashira = 'obanai'
+          } else if ((month === 7 && day >= 23) || (month === 8 && day <= 22)) {
+            hashira = 'sanemi'
+          } else if ((month === 6 && day >= 22) || (month === 7 && day <= 22)) {
+            hashira = 'zenitsu'
+          } else if ((month === 5 && day >= 21) || (month === 6 && day <= 21)) {
+            hashira = 'shinobu'
+          } else if ((month === 4 && day >= 20) || (month === 5 && day <= 20)) {
+            hashira = 'gyomei'
+          } else if ((month === 3 && day >= 21) || (month === 4 && day <= 19)) {
+            hashira = 'inosuke'
+          } else if ((month === 2 && day >= 19) || (month === 3 && day <= 20)) {
+            hashira = 'tanjiro'
+          } else if ((month === 1 && day >= 20) || (month === 2 && day <= 18)) {
+            hashira = 'muichiro'
+          }
+          displayinfo(hashira);
+
+        } else {
+            alert('please entera valid date');
+        }
+
+
+    
+    // display that zodiac sign info in popup
+
 });
