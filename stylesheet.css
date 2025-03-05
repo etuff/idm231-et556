@@ -267,7 +267,7 @@ input[type="submit"]:active {
 } 
 
 #helpinfo {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 30px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
@@ -456,7 +456,7 @@ footer {
         font-size: 18px;
     }
 
-    #displayarea {
+    section {
         justify-items: center;
     }
 
@@ -604,13 +604,14 @@ footer {
     }
 
     /* hashira display area */
-    #displayarea {
+    #section {
         justify-items: center;
+        padding: 15px;
     }
 
     .hashira {
         width: 100%; 
-        padding: 10px; 
+        padding: 12px; 
         border-radius: 10px;
 
         
@@ -647,10 +648,6 @@ footer {
         position: fixed;
         top: 10px;
         right: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
     }
 
     #help {
@@ -684,6 +681,7 @@ footer {
         width: 70px; 
         font-size: 12px; 
         padding: 5px;
+        justify-self: center;
     }
 
 
