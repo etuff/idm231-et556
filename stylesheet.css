@@ -419,6 +419,7 @@ footer {
     .container {
         width: 100%; 
         height: 700px;
+        margin-top: 30px;
     }
 
     #centerinput {
@@ -461,8 +462,25 @@ footer {
     }
 
     .hashira {
-        width: 90%;
+        width: 100%;
         padding: 15px;
+
+        #hashiraimage {
+            width: 450px;
+            margin: 7px;
+        }
+
+        h2 {
+            letter-spacing: 1px;
+            font-size: 22px;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 5px;
+        } 
+
+        h3 {
+            font-size: 17px;
+        }
     }
 
     #close {
@@ -520,6 +538,7 @@ footer {
     .container {
         width: 100%; 
         height: 500px;
+        margin-top: 30px;
     }
 
     #tanjiro {
@@ -606,7 +625,7 @@ footer {
     /* hashira display area */
     #section {
         justify-items: center;
-        padding: 15px;
+        padding: 10px;
     }
 
     .hashira {
@@ -617,7 +636,7 @@ footer {
         
         #hashiraimage {
             width: 300px;
-    
+            margin: 7px;
         }
 
         h2 {
