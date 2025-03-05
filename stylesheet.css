@@ -36,7 +36,7 @@ html {
 }
 
 body {
-    max-width: 1280px;
+    max-width: 100vw;
     max-height: 100vh;
     background-image: url(media/background22.webp);
     background-size: cover;
@@ -44,23 +44,26 @@ body {
     background-repeat: no-repeat;
     margin: 0;
     margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 /* what hashira are you? */
-#question {
-    font-family: var(--bloodcrow);
-    color: var(--white);
-    justify-self: center;
-    letter-spacing: 3px;
-    font-size: 24px;
-    text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+header {
+    margin: 0;
+    font-size: 22px;
 }
 
-
-
+#question {
+    justify-self: center;
+    font-family: var(--bloodcrow);
+    color: var(--white);
+    letter-spacing: 3px;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin: 15px;
+}
 
 .container {
     display: grid;
@@ -73,11 +76,11 @@ body {
     "giyu . input . gyomei"
     "mitsuri . . . shinobu"
     ". obanai sanemi zenitsu .";
-    width: 850px;
+    width: 800px;
     height: 750px;
-    gap: 10px;
-    margin: auto;
-    justify-items: center;
+    gap: 0px;
+    margin: 0;
+    margin-inline: auto;
     place-items: center;
     font-family: var(--segoe);
 }
@@ -122,7 +125,10 @@ picture img {
     right: 40px;
 }
 
-#gyomei { grid-area: gyomei;}
+#gyomei {
+    grid-area: gyomei;
+    left: 10px;
+}
 
 #shinobu {
     grid-area: shinobu;
@@ -147,7 +153,10 @@ picture img {
      grid-area: mitsuri;
      left: 40px;
  }
-#giyu { grid-area: giyu;}
+#giyu {
+    grid-area: giyu;
+    right: 10px;
+}
 
 #rengoku {
      grid-area: rengoku;
@@ -249,7 +258,7 @@ input[type="submit"]:active {
 }
 
 #help {
-    padding: 10px 30px;
+    padding: 20px 30px;
     border-style: solid;
     border-width: 3px;
     border-radius: 10px;
@@ -337,7 +346,7 @@ section {
     align-items: center;
     background-color: var(--white);
     border-radius: 20px;
-    padding: 35px 20px;
+    padding: 20px;
     margin: 20px 0;
     text-align: center;
 
@@ -390,7 +399,8 @@ footer {
     color: var(--white);
     text-align: center;
     font-family: var(--segoe);
-    margin-top: 60px;
+    margin-top: 10px;
     padding: 5px;
+    margin-bottom: 5px;
 
 }
