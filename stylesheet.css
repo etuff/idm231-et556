@@ -437,36 +437,6 @@ footer {
         }
     }
 
-
-    #inosuke {
-        grid-area: inosuke;
-        right: 20px;
-    }
-
-
-    #shinobu {
-        grid-area: shinobu;
-        right: 20px;
-    }
-
-    #sanemi {
-        grid-area: sanemi;
-        top: 15px;
-    }
-
-
-    #mitsuri {
-        grid-area: mitsuri;
-        left: 20px;
-    }
-
-    #rengoku {
-        grid-area: rengoku;
-        left: 20px;
-    }
-
-
-
     .thumb {
         height: 70px; 
         border-radius: 20px;
@@ -486,6 +456,10 @@ footer {
         font-size: 18px;
     }
 
+    #displayarea {
+        justify-items: center;
+    }
+
     .hashira {
         width: 90%;
         padding: 15px;
@@ -499,6 +473,7 @@ footer {
 
     #helpinfo {
         padding: 10px;
+        justify-items: center;
     }
 
     #help {
@@ -527,7 +502,7 @@ footer {
     }
 
     h2 {
-        font-size: 24px; 
+        font-size: 18px; 
     }
 
     h4, p {
@@ -547,8 +522,59 @@ footer {
         height: 500px;
     }
 
+    #tanjiro {
+        grid-area: tanjiro;
+        top: 30px;
+        left: 10px;
+    }
+    
+    #zenitsu{
+         grid-area: zenitsu;
+        bottom: 20px;
+        left: 10px;
+    }
+    
+    #sanemi {
+         grid-area: sanemi;
+         top: 10px;
+    }
+    
+    #obanai {
+         grid-area: obanai;
+         bottom: 20px;
+         right: 10px;
+    }
+    
+    
+    #tengen {
+         grid-area: tengen; 
+         top: 30px;
+         right: 10px;
+    }
+
+    #inosuke {
+        grid-area: inosuke;
+        right: 20px;
+    }
+
+    #shinobu {
+        grid-area: shinobu;
+        right: 20px;
+    }
+
+
+    #mitsuri {
+        grid-area: mitsuri;
+        left: 20px;
+    }
+
+    #rengoku {
+        grid-area: rengoku;
+        left: 20px;
+    }
+
     .thumb {
-        height: 60px;
+        height: 50px;
         border-radius: 15px;
     }
 
@@ -575,6 +601,10 @@ footer {
 
     input[type="submit"] {
         font-size: 14px; 
+    }
+
+    #displayarea {
+        justify-items: center;
     }
 
     .hashira {
@@ -612,7 +642,7 @@ footer {
     #howto {
         position: fixed;
         top: 10px;
-        right: 10px;
+        right: 5px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;   
@@ -625,6 +655,7 @@ footer {
 
     #helpinfo {
         border-radius: 10px;
+        justify-items: center;
 
         #instructions {
             width: 95%; 
@@ -632,7 +663,7 @@ footer {
         }
     
         #ubu {
-            width: 60px; 
+            width: 80px; 
         }
     
         h2 {
