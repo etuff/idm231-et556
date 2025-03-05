@@ -316,7 +316,7 @@ submitbtn.addEventListener('click', function() {
           displayinfo(hashira);
 
         } else {
-            alert('please entered a valid date');
+            alert('please entered a valid date in the MM/DD/YYYY format');
         }
     
     // display that zodiac sign info in popup
