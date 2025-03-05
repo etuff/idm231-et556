@@ -579,7 +579,7 @@ footer {
     }
 
     #centerinput {
-        padding: 10px;
+        padding: 15px;
         margin-bottom: 20px;
         display: flex;
         flex-direction: column;
@@ -597,14 +597,21 @@ footer {
     input[type="date"] {
         font-size: 12px; 
         width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     }
 
     input[type="submit"] {
         font-size: 14px; 
+        padding: 6px;
     }
 
+    /* hashira display area */
     #displayarea {
-        justify-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .hashira {
@@ -637,15 +644,19 @@ footer {
         width: 120px; 
         font-size: 16px; 
         padding: 10px; 
+        justify-self: center;
     }
 
+
+    /* how to play */
     #howto {
         position: fixed;
         top: 10px;
         right: 5px;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;   
+        align-items: flex-end;
+        justify-content: center;
     }
 
     #help {
@@ -678,9 +689,11 @@ footer {
     #clse {
         width: 70px; 
         font-size: 12px; 
-        padding: 5px; 
+        padding: 5px;
     }
 
+
+    /* footer */
     footer {
         padding: 4px;
 
