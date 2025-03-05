@@ -273,9 +273,9 @@ input[type="submit"]:active {
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 30px;
     padding: 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     justify-items: center;
 }
 
@@ -292,7 +292,7 @@ input[type="submit"]:active {
 }
 
 
-#instructions {
+#instructions, #creditpop {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -323,8 +323,7 @@ input[type="submit"]:active {
 section {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 30px;
-    height: 800px;
-    padding: 50px;
+    padding: 30px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -332,10 +331,7 @@ section {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-        
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-items: center;
 
 }
 
@@ -346,8 +342,8 @@ section {
     align-items: center;
     background-color: var(--white);
     border-radius: 20px;
-    padding: 20px;
-    margin: 20px 0;
+    padding: 25px;
+    margin: 0;
     text-align: center;
 
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, 
@@ -384,9 +380,8 @@ section {
     font-family: var(--bloodcrow);
     font-size: 22px;
     letter-spacing: 2px;
-    margin: 25px;
-    padding: 20px;
-    align-self: center;        
+    margin-top: 25px;
+    padding: 20px;       
 }
 
 .hideme{
@@ -402,5 +397,9 @@ footer {
     margin-top: 10px;
     padding: 5px;
     margin-bottom: 5px;
-
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    gap: 15px;
 }

@@ -263,6 +263,7 @@ helpclose.addEventListener('click', function() {
 });
 
 
+
 // input date and submit code below
 // 
 const submitbtn = document.getElementById('datesubmit');
@@ -315,10 +316,8 @@ submitbtn.addEventListener('click', function() {
           displayinfo(hashira);
 
         } else {
-            alert('please entera valid date');
+            alert('please entered a valid date');
         }
-
-
     
     // display that zodiac sign info in popup
 
