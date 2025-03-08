@@ -461,7 +461,6 @@ footer {
     }
 
     section {
-        justify-items: center;
 
         .hashira {
             width: 100%;
@@ -506,7 +505,6 @@ footer {
 
         #helpinfo {
             padding: 10px;
-            justify-items: center;
 
             #instructions {
                 width: 90%;
@@ -650,8 +648,6 @@ footer {
     /* hashira display area */
     section {
         width: 100vw; 
-        justify-items: center;
-        align-items: center;
         padding: 20px;
 
         .hashira {
@@ -705,8 +701,6 @@ footer {
 
         #helpinfo {
             border-radius: 10px;
-            justify-items: center;
-            align-items: center;
     
             #instructions {
                 width: 95%; 
