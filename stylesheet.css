@@ -554,7 +554,7 @@ footer {
     }
 
     .container {
-        width: 100%; 
+        width: 100vw; 
         height: 500px;
         margin: 35px 6px 0 6px;
 
