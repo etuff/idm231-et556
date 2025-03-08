@@ -556,7 +556,8 @@ footer {
     .container {
         width: 100vw; 
         height: 500px;
-        margin: 35px 6px 0 6px;
+        margin-top: 35px;
+        padding: 5px;
 
 
         #tanjiro {
@@ -650,6 +651,7 @@ footer {
     section {
         width: 100vw; 
         justify-items: center;
+        align-items: center;
         padding: 20px;
 
         .hashira {
@@ -704,6 +706,7 @@ footer {
         #helpinfo {
             border-radius: 10px;
             justify-items: center;
+            align-items: center;
     
             #instructions {
                 width: 95%; 
